@@ -56,11 +56,11 @@
 
 [ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
 
-rm -rf /tmp/papirus-icon-theme-kde
-git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme-kde /tmp/papirus-icon-theme-kde
-find /tmp/papirus-icon-theme-kde -maxdepth 1 -type f -exec rm -rf '{}' \;
-cp -r /tmp/papirus-icon-theme-kde/* ~/.icons/
-rm -rf /tmp/papirus-icon-theme-kde
+rm -rf /tmp/papirus-icon-theme
+git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme /tmp/papirus-icon-theme-kde
+find /tmp/papirus-icon-theme -maxdepth 1 -type f -exec rm -rf '{}' \;
+cp -r /tmp/papirus-icon-theme/* ~/.icons/
+rm -rf /tmp/papirus-icon-theme
 
 
 rm -rf /tmp/papirus-icon-theme-gtk
